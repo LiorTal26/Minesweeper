@@ -14,6 +14,17 @@ h1 {
                  35px 35px 0px #c11a2b; 
                  
 }
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.board td:hover {
+    background-color: lightsalmon;
+}
+
 
 .board{
     /* height: 200px; */

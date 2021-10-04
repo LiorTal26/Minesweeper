@@ -1,4 +1,5 @@
 'use strict'
+
 function printMat(mat, selector) {
     var strHTML = '<table border="0"><tbody>';
     for (var i = 0; i < mat.length; i++) {
