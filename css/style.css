@@ -1,6 +1,11 @@
 body{
     text-align: center;
+    background-color: #0ff;
+    
 }
+
+
+
 h1 {
     font-size: 60px;
     text-align: center;
@@ -17,6 +22,7 @@ h1 {
                  
 }
 h2 {
+  display: inline;
     font-size: 25px;
     font-family: 'Niconne', cursive;
     text-align: center;
@@ -35,6 +41,7 @@ h2 {
                  
 
 h3 {
+  
     font-size: 25px;
     font-family: 'Niconne', cursive;
     text-align: center;
@@ -49,6 +56,9 @@ h3 {
       0 0 100px #0ff,
       0 0 150px #0ff;
   }
+h4{
+  font-size: 35px;
+}
 
 button{
     transition: 0.2s;
@@ -77,10 +87,12 @@ button{
     cursor: pointer;
 
 }
+
 button:hover{
     color: rgba(251, 214, 214, 0.883);
     background-color: chocolate;
-    padding: 25px 18px;
+    font-size: 18px;
+    /* padding: 25px 18px; */
     
 }
 
@@ -103,25 +115,49 @@ button:hover{
     margin-left: 15px;
 }
 
+.restart{
+  margin-top: 25px;
+  padding: 10px 15px;
+  font-size: 50px;
+
+}
+.restart:hover{
+  
+  font-size: 53px;
+
+}
+
+.SafeClick{
+  margin-top: 25px;
+  padding: 10px 15px;
+  font-size: 50px;
+
+}
+
+.SafeClick:hover{
+  margin-top: 25px;
+  padding: 10px 15px;
+  font-size: 54px;
+}
 
 .board-container table{
     table-layout: fixed;
     margin: auto;
-    height: 360px;
-    width: 360px;
+    height: 500px;
+    width: 500px;
     box-shadow: 0 0 10px rgb(110, 107, 107);
     box-sizing: border-box;
     /* border-collapse: collapse; */
     /* empty-cells: hide; */
 }
 
-.board-container table td{
+/* .board-container table td{
    width: 25%;
    height: 25%;
-}
+} */
 
 .board-container{
-    margin: 20px;
+    margin: 5px;
 }
 
 .hide{
@@ -141,6 +177,37 @@ button:hover{
     background-color: white;
 }
 
+.footer{
+  font-size: 25px;
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    color: rgb(44, 6, 6);
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff;
+  /* position:relative; */
+  height: 25px;
+  width: 100px;
+  color: rgb(0, 0, 0);
+  /* text-align: justify; */
+
+}
+
+.safeshow{
+background-color: #efa032;
+animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
 
 /* Animated BackGround*/
@@ -174,3 +241,5 @@ button:hover{
       transform:translateX(25%);
     }
   }
+
+

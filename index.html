@@ -9,24 +9,38 @@
 </head>
 <body onload="init()">
     <h1>Minesweeper</h1>
+
     <div>
         <button class="EzBtn" onclick="changeLevel(this)">Easy</button>
         <button class="MedBtn" onclick="changeLevel(this)">Middle</button>
         <button class="ExtrmBtn" onclick="changeLevel(this)">Extreme</button>
     </div>
 
-    <h3 class="flag">Flags left: <span></span></h3>
-    <!-- <h3 class="life">Lives left: <span>❤❤❤</span> </h3> -->
+    
+    
     <h4 class="hide">victory/you loose</h4>
-    <button class="restart" onclick="restart()">Restart! <span>😁</span></button>
-    <div> <h2 >Timer: <span class="timer"></span> </h2></div>
+    
+    <div class="info-container"> 
+        <h3 class="life">Lives left: <span></span> </h3>
+        <h2 >Timer: <span class="timer"></span> </h2>
+        <h3 class="flag">Flags left: <span></span></h3>
+     </div>
+
+     <div>
+         <button class="SafeClick" onclick="showSafeCell()">SafeClick:<span></span></button>
+        <button class="restart" onclick="restart()"><span>😁</span></button>
+        <!-- <button class="restart" onclick="UndoStep()">UNDO</button> -->
+    </div>
+     
     <div class="board-container">
-        
+
     </div>
 
-    <div class="bg"></div>
+    <footer class="footer">Lior Tal</footer>
+     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
+     
 
     <script src="js/util.js"></script>
     <script src="js/app.js"></script>

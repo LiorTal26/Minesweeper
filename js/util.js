@@ -113,8 +113,6 @@ function expandShown(mat, elCell, cellI, cellJ) {
 }
 
 
-
-
 // timer
 function startTimer() {
 
