@@ -291,6 +291,10 @@ function showSafeCell() {
     //     for (var i = 0; i < gBoard.length; i++) {
     //         for (var j = 0; j < gBoard[i][j].length; j++) {
     //             if()  // gBoard[i][j].isShown  gBoard[i][j].isMarked 
+    // while (!gBoard[i][j].isShown && !gBoard[i][j].isMine) {
+    //      i = getRandomInt(0, gLevel.SIZE)
+    //      j = getRandomInt(0, gLevel.SIZE)
+    // }
 
 
 
